@@ -1,0 +1,6 @@
+{
+  "errors": {
+    "unreachable": "Bulb unreachable over Bluetooth. Check that it is powered and in range of Homey.",
+    "unresponsive": "Bulb is not responding. Switch it off at the wall for 10 seconds, then on again."
+  }
+}

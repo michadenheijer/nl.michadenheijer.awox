@@ -1,0 +1,8 @@
+{
+  "name": "nl.michadenheijer.awox",
+  "version": "0.1.0",
+  "description": "Homey app for first-generation AwoX SmartLIGHT Bluetooth bulbs",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true
+}

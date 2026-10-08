@@ -1,0 +1,33 @@
+{
+  "id": "nl.michadenheijer.awox",
+  "version": "0.1.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "AwoX SmartLIGHT BLE",
+    "nl": "AwoX SmartLIGHT BLE"
+  },
+  "description": {
+    "en": "Control first-generation AwoX SmartLIGHT Bluetooth bulbs (beta)",
+    "nl": "Bedien eerste generatie AwoX SmartLIGHT Bluetooth-lampen (b\u00e8ta)"
+  },
+  "category": [
+    "lights"
+  ],
+  "permissions": [
+    "homey:wireless:ble"
+  ],
+  "brandColor": "#1f6fb2",
+  "author": {
+    "name": "Micha den Heijer",
+    "email": "micha@michadenheijer.com"
+  },
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  }
+}

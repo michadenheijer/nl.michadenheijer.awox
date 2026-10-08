@@ -1,0 +1,5 @@
+.homeybuild/
+node_modules/
+.DS_Store
+*.pbm
+env.json

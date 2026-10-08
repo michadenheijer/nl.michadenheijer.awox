@@ -1,0 +1,104 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.michadenheijer.awox",
+  "version": "0.1.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "AwoX SmartLIGHT BLE",
+    "nl": "AwoX SmartLIGHT BLE"
+  },
+  "description": {
+    "en": "Control first-generation AwoX SmartLIGHT Bluetooth bulbs (beta)",
+    "nl": "Bedien eerste generatie AwoX SmartLIGHT Bluetooth-lampen (bèta)"
+  },
+  "category": [
+    "lights"
+  ],
+  "permissions": [
+    "homey:wireless:ble"
+  ],
+  "brandColor": "#1f6fb2",
+  "author": {
+    "name": "Micha den Heijer",
+    "email": "micha@michadenheijer.com"
+  },
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "AwoX SmartLIGHT (white)",
+        "nl": "AwoX SmartLIGHT (wit)"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "ble"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        }
+      ],
+      "images": {
+        "small": "/drivers/smartlight/assets/images/small.png",
+        "large": "/drivers/smartlight/assets/images/large.png",
+        "xlarge": "/drivers/smartlight/assets/images/xlarge.png"
+      },
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Connection",
+            "nl": "Verbinding"
+          },
+          "children": [
+            {
+              "id": "poll_interval",
+              "type": "number",
+              "label": {
+                "en": "Status refresh interval",
+                "nl": "Status refresh interval"
+              },
+              "hint": {
+                "en": "How often Homey reads the bulb's state, in seconds. Changes made elsewhere are usually picked up instantly; this is a safety net. 0 disables polling.",
+                "nl": "Hoe vaak Homey de status van de lamp uitleest, in seconden. Wijzigingen van elders komen meestal direct binnen; dit is een vangnet. 0 schakelt verversen uit."
+              },
+              "value": 60,
+              "min": 0,
+              "max": 3600,
+              "step": 10,
+              "units": {
+                "en": "s",
+                "nl": "s"
+              }
+            }
+          ]
+        }
+      ],
+      "id": "smartlight"
+    }
+  ]
+}

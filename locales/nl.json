@@ -1,0 +1,6 @@
+{
+  "errors": {
+    "unreachable": "Lamp niet bereikbaar via Bluetooth. Controleer of hij stroom heeft en binnen bereik van Homey is.",
+    "unresponsive": "Lamp reageert niet. Zet hem 10 seconden uit met de schakelaar en daarna weer aan."
+  }
+}
